@@ -1,3 +1,5 @@
+[![Release](https://github.com/bakuppus/github-action-semantic-tag-release-changelog3/actions/workflows/release.yaml/badge.svg?branch=b1)](https://github.com/bakuppus/github-action-semantic-tag-release-changelog3/actions/workflows/release.yaml)
+
 # github-action-semantic-tag-release-changelog3
 1
 2

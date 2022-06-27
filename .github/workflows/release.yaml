@@ -26,8 +26,8 @@ jobs:
         id: versioning
         with:
           tag_prefix: "v"
-          major_pattern: "BREAKING CHANGE"
-          minor_pattern: "feat:"
+          major_pattern: "breaking:release:"
+          minor_pattern: "feat:change:improve"
           bump_each_commit: false
           short_tags: false
           format: "${major}.${minor}.${patch}"

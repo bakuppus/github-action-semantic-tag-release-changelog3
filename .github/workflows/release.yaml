@@ -6,7 +6,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*"
+      - "*"
 
 jobs:
 
@@ -28,7 +28,7 @@ jobs:
           tag_prefix: "v"
           major_pattern: "(MAJOR)"
           minor_pattern: "(MINOR)"
-          bump_each_commit: false
+          bump_each_commit: true
           format: "${major}.${minor}.${patch}"
 
 

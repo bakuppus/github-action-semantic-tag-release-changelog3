@@ -26,8 +26,8 @@ jobs:
         id: versioning
         with:
           tag_prefix: "v"
-          major_pattern: "(MAJOR)"
-          minor_pattern: "(MINOR)"
+          major_pattern: "bug:"
+          minor_pattern: "fix:"
           bump_each_commit: true
           format: "${major}.${minor}.${patch}"
 

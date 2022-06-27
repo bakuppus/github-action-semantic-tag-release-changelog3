@@ -27,7 +27,7 @@ jobs:
         with:
           tag_prefix: "v"
           major_pattern: "BREAKING CHANGE"
-          minor_pattern: "feat", "fix", "perf"
+          minor_pattern: "feat:"
           bump_each_commit: false
           short_tags: false
           format: "${major}.${minor}.${patch}"

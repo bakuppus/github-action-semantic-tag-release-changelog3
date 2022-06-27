@@ -11,7 +11,7 @@ on:
 jobs:
 
   versioning:
-
+    if: github.event.base_ref == 'ref/heads/release'
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}

@@ -7,7 +7,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*"
+      - "*"
 
 jobs:
 
@@ -19,13 +19,11 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
+          ref: 'test'
           fetch-depth: 0
 
-      - name: Exit
-        if: github.event.base_ref == 'refs/heads/test'
-        run: exit -1
 
       - uses: paulhatch/semantic-version@v4.0.3
         id: versioning

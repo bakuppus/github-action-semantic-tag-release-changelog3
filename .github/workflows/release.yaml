@@ -11,7 +11,7 @@ on:
 jobs:
 
   versioning:
-    if: github.event.base_ref == 'ref/heads/release'
+    if: github.event.base_ref == 'ref/heads/test'
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}
@@ -31,7 +31,7 @@ jobs:
           bump_each_commit: false
           short_tags: false
           format: "${major}.${minor}.${patch}"
-          branch: release
+
 
 
 

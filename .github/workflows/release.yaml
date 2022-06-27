@@ -23,6 +23,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Exit
+        if: endsWith(github.ref, 'test') == false
+        run: exit -1
 
       - uses: paulhatch/semantic-version@v4.0.3
         id: versioning

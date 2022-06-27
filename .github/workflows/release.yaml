@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Exit
-        if: endsWith(github.ref, 'test') == false
+        if: github.event.base_ref == 'refs/heads/test'
         run: exit -1
 
       - uses: paulhatch/semantic-version@v4.0.3

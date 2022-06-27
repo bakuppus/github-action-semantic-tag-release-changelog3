@@ -31,7 +31,7 @@ jobs:
           bump_each_commit: false
           short_tags: false
           format: "${major}.${minor}.${patch}"
-          branch: develop
+          branch: release
 
 
 
